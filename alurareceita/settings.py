@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'pessoas', #Registar o app que foi criado
     'receitas',#Registrar o app que foi criado.
     'django.contrib.admin',
     'django.contrib.auth',
@@ -130,3 +131,10 @@ STATICFILES_DIRS =[
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+# Media das Fotos
+#Configuração para usar os arquivos de media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
